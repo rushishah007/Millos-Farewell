@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Journey</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="message-container">
+    <div class="screen" id="screen1">
+      <h1 style="animation: fadeIn 2s;">Hey Millo, this one's for you!</h1>
+    </div>
+    <div class="screen" id="screen2">
+      <div class="chat-box">
+        <div class="message" id="message1"></div>
+        <div class="typing-indicator"></div>
+        <div class="send-icon" onclick="sendMessage()">➤</div>
+      </div>
+    </div>
+    <div class="screen" id="screen3">
+      <h1 style="animation: flying 1s;">I was going to do that</h1>
+    </div>
+    <div class="screen" id="screen4">
+      <h1 style="animation: flying 1s;">But then I realized</h1>
+    </div>
+	<div class="screen" id="screen5">
+		<h1 style="animation: flying 1s;">I wanted to do something <b style="color: #3c5d7c;">SPECIAL</b></h1>
+	  </div>
+    <div class="screen" id="screen6">
+      <h1 style="animation: flying 1s;">Because</h1>
+    </div>
+	<div class="screen" id="screen7">
+		<h1 style="animation: flying 1s;">You're <b style="color: #3c5d7c;">SPECIAL</b></h1>
+	</div>
+	<div class="screen" id="screen8">
+		<h1 style="animation: flying 1s;">And We LOVE YOU!</h1>
+		<div class="card-container">
+		  <div class="card" onclick="flipCard(1)">
+			<div class="card-inner">
+			  <div class="card-front">
+				<img src="Images/shrawani.jpg" alt="Card Front Image" class="card-image">
+			  </div>
+			  <div class="card-back">
+				<div class="card-content">
+				  <img src="Images/shrawani2.jpg" alt="Card Back Image" class="card-back-image">
+				  <p style="font-size: small;">Miloooo, I am so thankful for that conversation we had on our small date, means a lot to me. I just cannot express enough gratitude to you for always encouraging me to do my best, love you loads ❤</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" onclick="flipCard(2)">
+			<div class="card-inner">
+			  <div class="card-front">
+				<img src="Images/yash.jpg" alt="Card Front Image" class="card-image">
+			  </div>
+			  <div class="card-back">
+				<div class="card-content">
+				  <img src="Images/yash.jpg" alt="Card Back Image" class="card-back-image">
+				  <p style="font-size: small;">Hii millo, I'm going to miss you while you're abroad. We've had
+					so many great memories together. I remember the IEEE orientation and Pratishtha too, and it was so much fun to see you and everyone else there working together. And thank you for remembering the suit and saree day in which you told me that to remove the googles and then will click photo, that was a lot of fun too! I'm glad we all enjoyed our IV trip, cake cutting when we had our 1st paper published, picking
+					you up at night for aarya’s birthday and blowing the balloons and decorating the car, You and rane once came to my home for Ganpati will be always remembered. And of course, the creativity work and the night out with Rushi were both unforgettable and many more but still I always hope we would have met earlier.</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" onclick="flipCard(3)">
+			<div class="card-inner">
+			  <div class="card-front">
+				<img src="Images/gaurav.jpg" alt="Card Front Image" class="card-image">
+			  </div>
+			  <div class="card-back">
+				<div class="card-content">
+				  <img src="Images/gaurav2.jpg" alt="Card Back Image" class="card-back-image">
+				  <p style="font-size: small;">Millo, where do I begin, you are a weird amalgamation of extraordinary qualities. You are one of the best people I will probably ever come across in my life. Whenever you walk into any room you light up the entire environment and bring a smile to everyone's face (at least mine). I can describe these past 15 months as the best time that I have had.
+					<br><br>
+					PS: Bitch, return that polaroid you stole ASAP😤</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" onclick="flipCard(4)">
+			<div class="card-inner">
+			  <div class="card-front">
+				<img src="Images/darshit.jpg" alt="Card Front Image" class="card-image">
+			  </div>
+			  <div class="card-back">
+				<div class="card-content">
+				  <img src="Images/darshit2.jpg" alt="Card Back Image" class="card-back-image">
+				  <p style="font-size: small;">One of best SCHOOL friend whom I'll always treasure. Always thought you were a bitch but you're literally a gem and I am soooo glad to have you as my best friend. You dare not forget/replace me with anyone there or ill haunt you😋.  The rest does not have to be said because you already know how much you mean to me</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="card">
+			<div class="card__front">
+			  <!-- Video Embed -->
+			  <video class="video" controls>
+				<source src="Images/vansh.mp4" type="video/mp4">
+				<!-- Add more source elements for other video formats (WebM, Ogg, etc.) -->
+			  </video>
+			  <!-- Your other content for the front of the card -->
+			</div>
+			<div class="card__back">
+			  <!-- Nothing on the back of the card -->
+			</div>
+		  </div>
+		  <div class="card">
+			<div class="card__front">
+			  <!-- Video Embed -->
+			  <video class="video" controls>
+				<source src="Images/aarya.mp4" type="video/mp4">
+				<!-- Add more source elements for other video formats (WebM, Ogg, etc.) -->
+			  </video>
+			  <!-- Your other content for the front of the card -->
+			</div>
+			<div class="card__back">
+			  <!-- Nothing on the back of the card -->
+			</div>
+		  </div>		  
+		  <div class="card" onclick="flipCard(7)">
+			<div class="card-inner">
+			  <div class="card-front">
+				<img src="Images/rutvik.jpg" alt="Card Front Image" class="card-image">
+			  </div>
+			  <div class="card-back">
+				<div class="card-content">
+				  <img src="Images/rutvik2.jpg" alt="Card Back Image" class="card-back-image">
+				  <p style="font-size: small;">To the scariest, craziest, smartest, and prankiest person I have ever met,
+
+					The past two years have been the best times of my college life. I really enjoyed all the hangouts, birthdays, and trips that we went on. You never missed an opportunity to make them special and thoughtful for everyone. I am so glad to have you as a friend, and I am grateful that we took on the marathon project together.
+					
+					Ps Need to go for the pending trip soon !!!</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" onclick="flipCard(8)">
+			<div class="card-inner">
+			  <div class="card-front">
+				<img src="Images/mit.jpg" alt="Card Front Image" class="card-image">
+			  </div>
+			  <div class="card-back">
+				<div class="card-content">
+				  <img src="Images/mit2.jpg" alt="Card Back Image" class="card-back-image">
+				  <p style="font-size: small;">Can't believe how far we've come! From talking about books, anime, Formula 1, Haikus to our careers, plans and future trips; I feel like we've been through it all but at the same time we haven't even scratched the surface! I'm going to miss you and the silliest of things you do dearly. Until next time Miilo, I'll see you very soon </p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" onclick="flipCard(9)">
+			<div class="card-inner">
+			  <div class="card-front">
+				<img src="Images/pri2.jpg" alt="Card Front Image" class="card-image">
+			  </div>
+			  <div class="card-back">
+				<div class="card-content">
+				  <img src="Images/pri.jpg" alt="Card Back Image" class="card-back-image">
+				  <p style="font-size: small;">Hey millo, my short stack of pancakes. 
+					You have turned out to be one of my most important best friends in my life. Someone, who I may not have spent all my time in these four years with but everytime we got together it was the perfect and most truest girl time I've ever had. Through all the drama, friends who have come and gone you've been by my side and I know USC will give you a new life away from us (even though I'll be there in four months to haunt you). I love you 3000, and i cant wait make more core memories with you while eating all the best food a picky eater like you can gorge on.</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" onclick="flipCard(10)">
+			<div class="card-inner">
+			  <div class="card-front">
+				<img src="Images/rane2.jpg" alt="Card Front Image" class="card-image">
+			  </div>
+			  <div class="card-back">
+				<div class="card-content">
+				  <img src="Images/rane.jpg" alt="Card Back Image" class="card-back-image">
+				  <p style="font-size: small;">
+					Thinking about our whole journey, I’ve been so happy that I got a chance to meet you (thank you IEEE) and become friends with you, bestest thing to ever happen.
+					
+					It’s been a total joy ride, from rengoku deaths to council shit and so so so much more!
+					
+					Really grateful that I met you and got a chance to make such wonderful memories, and ofcourse also be a part of Millionaire’s club or may I say family? 
+					
+					Gonna miss you loads but ofcourse we’ll meet soon and it certainly issa vibe!</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" onclick="flipCard(11)">
+			<div class="card-inner">
+			  <div class="card-front">
+				<img src="Images/aryan.jpg" alt="Card Front Image" class="card-image">
+			  </div>
+			  <div class="card-back">
+				<div class="card-content">
+				  <img src="Images/aryan.jpg" alt="Card Back Image" class="card-back-image">
+				  <p style="font-size: small;">Wow, where do I even begin? You're the most intimidating person I've ever met in my life lol. So smol and cute, but will fuck people up with her smartness and pranks. I used to think I was pretty smart until I met you hahaha. Believe it or not, I'll always look for someone like you in all my future friends. I'm grateful that we became such good friends, and I just wanna thank you that. Praying for USC and LA because, trust me, they're not ready for this cute goblin. I'll miss you a lot and can't wait to meet you again (very soon)!</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" onclick="flipCard(12)">
+			<div class="card-inner">
+			  <div class="card-front">
+				<img src="Images/adi.jpg" alt="Card Front Image" class="card-image">
+			  </div>
+			  <div class="card-back">
+				<div class="card-content">
+				  <img src="Images/adi2.jpg" alt="Card Back Image" class="card-back-image">
+				  <p style="font-size: small;">Hello Miloni, Firstly congratulations and All the best for your new beginning, new journey of your life. I am damn sure you are going to rock it. Aapna dyaan rakhna and any problem i am always here just a call away. I want you to know that you are the smartest, brightest and cutest and I want you to achieve everything you have ever told me and even more than that.Take care platypus 🫂</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" onclick="flipCard(13)">
+			<div class="card-inner">
+			  <div class="card-front">
+				<img src="Images/pratham.jpg" alt="Card Front Image" class="card-image">
+			  </div>
+			  <div class="card-back">
+				<div class="card-content">
+				  <img src="Images/pratham2.jpg" alt="Card Back Image" class="card-back-image">
+				  <p style="font-size: small;">Heyloii senpai, finally the day is here, it's your time to fly to a new country, stepping into a new life, having a great career coming ahead, all of us are going to miss you obviously(but mai thoda jyada😂) ik I ain't that close to you, but yes ik I am important to you, and you are one the of the most important person in my life
+					Chale gaye yaar ye 2 saal, kitna jaldi chala gaya, 2-2 fest hogaye, ik we don't have alot of memories, but yes whatever we have, we have spent the best of all moments, sorry I wasn't there all the time, have a safe journey miss chotu senior
+					One of the best and the smartest, you've taught all of us alot of things, the most optimistic person for everyone(don't worry Rushi you too are babes)
+					Will miss you,
+					Have a safe and great journey, senpai ;)</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" onclick="flipCard(14)">
+			<div class="card-inner">
+			  <div class="card-front">
+				<img src="Images/rushabh.jpg" alt="Card Front Image" class="card-image">
+			  </div>
+			  <div class="card-back">
+				<div class="card-content">
+				  <img src="Images/rushabh.jpg" alt="Card Back Image" class="card-back-image">
+				  <p style="font-size: small;">Dear Milloni,
+
+					How are you? I hope your are fine.Today, you are leaving for the USA, and though I'm happy for you, I can't help but feel a bit sad. Teri kami humesha khalne wali hai college mai!
+					
+					The first time I saw you was that Calci workshop from that day my respect towards has always grown exponentially. You are true gem for this college and also for everyone in this group.
+					Those NAAC days were truly special and unforgettable for me. The college was empty, and everyone in college was just enjoying those moments knowing that it would never repeat again. It was first time I met you and uff teri itni badi bag , tu koi doremon se kam nahi thi.
+					Everything we needed was there with you may it be scissors, stapler, food ya phir knowledge or skills.
+					
+					Tere sath last year ke yuva se lekar kya hi enjoy kiya hai , Tera bday celebrate karna last year ka kya hi achha tha. And then you came like a savior for my last year mini project uff. Always thankful for that.
+					
+					And how can I forget this year's creativity time? Tere bina iss saal ka creativity complete hi nahi hota.Tune kaafi help kiya and legit thank you for that. That whole LED stuffs kya hi difficult tha , but you were super optimistic on that too. 
+					
+					Milloni, you've been more than a senior to me. You've been a friend, a mentor, and a guide for almost 2 years now. Your support and guidance have always been a source of strength for us.
+					
+					I wish you to stay more here , but i guess this is it now. 
+					I wish you all the best on this new journey. May you find success, happiness, and all the adventures you've ever dreamed of. Stay safe in US and keep in touch.
+					
+					With love and warm wishes,
+					
+					[Yours Og apsara partner]</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" onclick="flipCard(15)">
+			<div class="card-inner">
+			  <div class="card-front">
+				<img src="Images/soham.jpg" alt="Card Front Image" class="card-image">
+			  </div>
+			  <div class="card-back">
+				<div class="card-content">
+				  <img src="Images/soham2.jpg" alt="Card Back Image" class="card-back-image">
+				  <p style="font-size: small;">Hey millo,
+					I know we have known each other for the shortest time but it felt like we knew each other for a very long time. I am really glad and happy you are following your dreams I wish nothing but happiness for you! Ik we had the worth timing but I am happy we have so many memories like 3rd of June, 12th July and so on.
+					
+					Ahh. TAKE CARE of yourself. May God bless you.
+					
+					S a y o n a r a, H I M E!</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" onclick="flipCard(16)">
+			<div class="card-inner">
+			  <div class="card-front">
+				<img src="Images/madhura.jpg" alt="Card Front Image" class="card-image">
+			  </div>
+			  <div class="card-back">
+				<div class="card-content">
+				  <img src="Images/madhura2.jpg" alt="Card Back Image" class="card-back-image">
+				  <p style="font-size: small;">Hiii miloniiiii! I'm so proud of how you've been doing so so well all the way from pace. It's been such a long time that we've been friends and even though we don't talk everyday, we always have that one insanely long catch up call once in a while that I always look forward to 😂❤️ Can't wait to celebrate all your future achievements (there's going to be so many, I'm so excited) together ✨ 
+
+					Have a great one babes, see you on the other side! You have a place to stay if (when) you visit New York 💕</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" onclick="flipCard(17)">
+			<div class="card-inner">
+			  <div class="card-front">
+				<img src="Images/insha.jpg" alt="Card Front Image" class="card-image">
+			  </div>
+			  <div class="card-back">
+				<div class="card-content">
+				  <img src="Images/insha2.jpg" alt="Card Back Image" class="card-back-image">
+				  <p style="font-size: small;">Dear Millu, 
+					It’s hard to believe that we have known each other for almost 8 years now :) 
+					Kind off tough to pick and choose my favourite memories since all of them are just so equally wonderful! 
+					I still remember the first time you sat next to me in 8th grade and honestly I experienced love at first sight! XD 
+					I cracked a dumb joke to diffuse the awkwardness and you cackled so atrociously, it was hilarious!
+					I still crack a smile when I think about how you talked me into scaring that rikshawalla after that tuition Halloween party 😭. Actually I still remember you promising me that you will treat me to a domino’s pizza and I’m still waiting for that day to come! 😡
+					Anyway, from surviving those sleep inducing Priya miss ka tuitions to Los Fucking Angeles, you’ve come a very long way, and I’m super duper proud of you, girl!
+					I’m really hoping we get to experience Japan together someday! 
+					Can’t wait for you to be my sugar mamma for real HAHAHHAHA
+					I’m looking forward to our virtual dates! :P 
+					Love you so much, Millu!</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" onclick="flipCard(18)">
+			<div class="card-inner">
+			  <div class="card-front">
+				<img src="Images/devansh.png" alt="Card Front Image" class="card-image">
+			  </div>
+			  <div class="card-back">
+				<div class="card-content">
+				  <img src="Images/devansh.png" alt="Card Back Image" class="card-back-image">
+				  <p style="font-size: small;">A review by a friend: 
+
+					She is a 10 and she watches anime , she is a 20 . 
+					
+					Super cute and has a smile which can light up the whole room .
+					
+					Most reliable , charming and humorous. 
+					
+					She is my safe space , my constant for 7 years and counting.</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" onclick="flipCard(19)">
+			<div class="card-inner">
+			  <div class="card-front">
+				<img src="Images/rushi.jpg" alt="Card Front Image" class="card-image">
+			  </div>
+			  <div class="card-back">
+				<div class="card-content">
+				  <img src="Images/rushi2.jpg" alt="Card Back Image" class="card-back-image">
+				  <p style="font-size: small;">From: "Rushi, naam toh suna hoga!"
+					<br>
+					This journey will be "kabhi Khushi, kabhi gham" but always remember to be brave and give it your all "jab Tak hai jaan"! Kabhi low feel ho toh yaad rakhna "Bade bade deshon mein aisi chhoti chhoti baatein hoti rehti hai" and "Mai hoon na" toh "You'll be alright". Also make sure to experience things as if "Zindagi na milegi dobara". Lekin agar aapko "Koi mil Gaya" toh bhul mat jana "Hum aapke hai kon". Whenever we meet here and if I don't drink, you know why 😂 "Agar mai pee lu aur tum mere nashe mai hone ka faayda nai uthaogi, toh peene ka kya faayda" 😂 This is your time to shine and hence "Ja Millo ja, jee le apni zindagi". Ha and "Zindagi mein agar kuch banna ho, kuch haasil karna ho, kuch jeetna ho, toh hamesha dil ki suno." Lastly "Tumhari smile kitni dangerous hai pata hai? ... mere paas dil hota na, teri smile pe pakka aa jaata"
+					 Ps: aa gaya hai
+					 <br>  Millo se baat, millo se baat jab bhi man ho karlo, millo se baat! Aisa mauka jabhi mile, saare bache khush ho jaate! Millo se baat, millo se baat, jabhi chance ho karloooooo<br>
+					 I have to admit "Mujhe yaad sataye teri, Haaye haaye yaad sataye teri".  Millo mere sher, mere cheeteh, tujhe 1 saal akela kya choda, tune itna bada jhol kar diya? Koi na, aaja ab jaldi, intezaar rahega 🫶🏻 
+					 <br>愛してるよ、相棒
+					</p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" onclick="flipCard(20)">
+			<div class="card-inner">
+			  <div class="card-front">
+				<img src="Images/aunty.jpg" alt="Card Front Image" class="card-image">
+			  </div>
+			  <div class="card-back">
+				<div class="card-content">
+				  <img src="Images/aunty2.jpg" alt="Card Back Image" class="card-back-image">
+				  <p style="font-size: small;"></p>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		  <div class="card" onclick="flipCard(21)">
+			<div class="card-inner">
+			  <div class="card-front">
+				<img src="Images/nani.png" alt="Card Front Image" class="card-image">
+			  </div>
+			  <div class="card-back" style="padding: 0px;">
+				<img src="Images/nani2.png" alt="Card Front Image" class="card-image">
+			  </div>
+			</div>
+		  </div>
+		  <!-- Add more cards as needed --><br>
+		</div>
+		<div class="more-button-container">
+			<a href="gallery.html" class="more-button" target="_blank">A lil more for the one who always is a lil extra</a>
+		  </div>
+	  </div>
+	</div>
+	<script src="script.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Special Journey</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="message-container">
+    <!-- Your existing screens... -->
+
+    <!-- New screen for the image gallery -->
+    <div>
+      <h1 style="animation: flying 1s; font-size: x-large;">Yaadein mithai ke dabbe ki tarah hoti hain, ek baar khula toh sirf ek tukda nahi khaa paoge!</h1>
+      <div class="image-gallery">
+        <!-- Replace the placeholders with the actual image URLs provided by your friends -->
+        <div class="image-wrapper" onclick="openLightbox(0)">
+          <img src="Gallery/gallery3.jpg" alt="Image 1">
+        </div>
+        <div class="image-wrapper" onclick="openLightbox(1)">
+          <img src="Gallery/gallery2.jpg" alt="Image 2">
+        </div>
+        <div class="image-wrapper" onclick="openLightbox(0)">
+            <img src="Gallery/gallery.jpg" alt="Image 1">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery15.jpg" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery6.jpg" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(0)">
+            <img src="Gallery/gallery4.jpg" alt="Image 1">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery13.jpg" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery8.jpg" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery14.jpg" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery7.jpg" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery10.jpg" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery8.png" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery16.jpg" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery12.jpg" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery9.jpg" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery11.jpg" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery17.jpg" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery23.jpg" alt="Image 2">
+          </div>        
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery21.jpg" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery20.jpg" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery22.jpg" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery18.jpg" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery25.jpg" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery19.jpg" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery24.jpg" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery25.jpg" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery27.jpg" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery26.jpg" alt="Image 2">
+          </div>
+          <div class="image-wrapper" onclick="openLightbox(1)">
+            <img src="Gallery/gallery28.jpg" alt="Image 2">
+          </div>
+        <!-- Add more image wrappers for additional images -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox Container -->
+  <div id="lightbox" class="lightbox">
+    <div class="lightbox-content">
+      <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+      <div class="lightbox-slides">
+        <!-- Images will be added here dynamically -->
+      </div>
+      <a class="lightbox-prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="lightbox-next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
